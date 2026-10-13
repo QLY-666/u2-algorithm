@@ -6,6 +6,8 @@
             "command": "E:\\mingw2026\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
+                "-finput-charset=UTF-8",
+                "-fexec-charset=GBK",
                 "-g",
                 "${file}",
                 "-o",

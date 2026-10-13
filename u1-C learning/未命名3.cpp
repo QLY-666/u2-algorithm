@@ -13,7 +13,7 @@ int main()
   printf("%06d\n",4);
   //  
   //
-  printf("%-3d\n",1);//°ÑÊı×ó¶ÔÆë 
+  printf("%-3d\n",1);//æŠŠæ•°å·¦å¯¹é½ 
   printf("%-4d\n",11);
   printf("%-5d\n",111);
   printf("%-6d\n",1111);

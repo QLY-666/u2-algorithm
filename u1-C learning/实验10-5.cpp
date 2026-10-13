@@ -1,14 +1,14 @@
-#include ¡°stdio.h¡±
-#include ¡°string.h¡±
+#include â€œstdio.hâ€
+#include â€œstring.hâ€
 #define N 10
 struct Book
 { char name[100];
 float price;
 };
-int instring(char *s1,char *s2); //s1ÈôÊôÓÚs2µÄ×Ö´®£¬Ôò·µ»Ø1£¬·ñÔò·µ»Ø0
+int instring(char *s1,char *s2); //s1è‹¥å±äºs2çš„å­—ä¸²ï¼Œåˆ™è¿”å›1ï¼Œå¦åˆ™è¿”å›0
 int main()
 { int i,flag=0;
-struct Book books[N]={{¡°Fling in sky¡±,23.0},{¡°I love my mother¡±,15.5},{¡°My love¡±,25.6},{¡°Color is red¡±,34.9},{¡°Black and red¡±,20.5},{¡°Let me love you¡±,16.0}, {¡°Sun is red¡±,45.0},{¡°Flower sunshine¡±,23.8},{¡°Say love not easy¡±,45.9},{¡°Friday black¡±,34.0}};
+struct Book books[N]={{â€œFling in skyâ€,23.0},{â€œI love my motherâ€,15.5},{â€œMy loveâ€,25.6},{â€œColor is redâ€,34.9},{â€œBlack and redâ€,20.5},{â€œLet me love youâ€,16.0}, {â€œSun is redâ€,45.0},{â€œFlower sunshineâ€,23.8},{â€œSay love not easyâ€,45.9},{â€œFriday blackâ€,34.0}};
 char name[20];
 gets(name);
 for(i=0;i<N;i++)
@@ -16,12 +16,12 @@ if(instring(name,books[i].name))
 { printf("%s:%g\n",books[i].name,books[i].price);
 flag=1;
 }
-//´Ë´¦ÌîÈëÒ»ĞĞÓï¾ä
-printf(¡°None\n¡±);
+//æ­¤å¤„å¡«å…¥ä¸€è¡Œè¯­å¥
+printf(â€œNone\nâ€);
 return 0;
 }
 
-int instring(char *s1,char *s2) //s1ÈôÊôÓÚs2µÄ×Ó´®£¬Ôò·µ»Ø1£¬·ñÔò·µ»Ø0
+int instring(char *s1,char *s2) //s1è‹¥å±äºs2çš„å­ä¸²ï¼Œåˆ™è¿”å›1ï¼Œå¦åˆ™è¿”å›0
 {
-//´Ë´¦ÌîÈë¶àĞĞÓï¾ä
+//æ­¤å¤„å¡«å…¥å¤šè¡Œè¯­å¥
 }

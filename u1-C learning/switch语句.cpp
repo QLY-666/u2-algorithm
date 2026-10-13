@@ -1,23 +1,23 @@
 #include<stdio.h>
 int main()
 {   int score;
-    printf("ÇëÊäÈë·ÖÊı£º");
+    printf("è¯·è¾“å…¥åˆ†æ•°ï¼š");
     scanf("%d",&score);
     switch(score)
 	{
-//µ¥¸ö×Ö·ûÒª¼Ó'',¼ÇµÃ¿Õ¸ñÓëÃ°ºÅ	
+//å•ä¸ªå­—ç¬¦è¦åŠ '',è®°å¾—ç©ºæ ¼ä¸å†’å·	
 	case 9:
-		printf(" ÓÅĞã\n");
+		printf(" ä¼˜ç§€\n");
 		
 	 
 	case 8:
-		printf(" Á¼ºÃ\n");
+		printf(" è‰¯å¥½\n");
 	
 		
 	case 7:
-		printf(" Ò»°ã\n");
+		printf(" ä¸€èˆ¬\n");
 		break;	
-//²»¼Ó defaultÔòÌîÒ»¸ö·¶Î§ÍâµÄÊıÎŞ½á¹û 
+//ä¸åŠ  defaultåˆ™å¡«ä¸€ä¸ªèŒƒå›´å¤–çš„æ•°æ— ç»“æœ 
 //	default:
 //	printf("NO CHOOSE");
 	

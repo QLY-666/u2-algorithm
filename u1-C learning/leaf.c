@@ -36,9 +36,9 @@ int Countleaf(Tree T)
 int main()
 {
  Tree T=NULL;
- printf("ÇëÊäÈëÇ°ĞòĞòÁĞ(0±íÊ¾¿Õ½Úµã)\n");
+ printf("è¯·è¾“å…¥å‰åºåºåˆ—(0è¡¨ç¤ºç©ºèŠ‚ç‚¹)\n");
  CreateTree(&T);
  int num=Countleaf(T);
- printf("Ò¶×ÓÊıÎª%d\n",num);
+ printf("å¶å­æ•°ä¸º%d\n",num);
  return 0;   
 }

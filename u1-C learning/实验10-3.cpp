@@ -7,24 +7,24 @@ int day;
 };
 struct Mate
 { char name[10];
-//´Ë´¦ÌîĞ´Ò»ĞĞÓï¾ä
+//æ­¤å¤„å¡«å†™ä¸€è¡Œè¯­å¥
 char tel[12];
 };
 struct Mate p[N];
-int Datecomp(struct Date d1,struct Date d2); //d1ÄêÁä±Èd2´ó·µ»Ø1£¬ÏàµÈ·µ»Ø0£¬Ğ¡Ôò·µ»Ø-1
+int Datecomp(struct Date d1,struct Date d2); //d1å¹´é¾„æ¯”d2å¤§è¿”å›1ï¼Œç›¸ç­‰è¿”å›0ï¼Œå°åˆ™è¿”å›-1
 int main()
 { int i,j,k,n;
 struct Mate m;
 scanf("%d",&n);
-for(i=0;i<n;i++) //ÊäÈën¸öÁªÏµÈËµÄĞÅÏ¢
+for(i=0;i<n;i++) //è¾“å…¥nä¸ªè”ç³»äººçš„ä¿¡æ¯
 { scanf("%s",p[i].name);
 scanf("%d-%d-%d",&p[i].birthday.year,&p[i].birthday.month,&p[i].birthday.day);
 scanf("%s",p[i].tel);
 }
-for(i=0;i<n-1;i++) //Ñ¡ÔñÅÅĞòËã·¨°´ÄêÁä½µĞòÅÅÁĞ
+for(i=0;i<n-1;i++) //é€‰æ‹©æ’åºç®—æ³•æŒ‰å¹´é¾„é™åºæ’åˆ—
 { k=i;
 for(j=i+1;j<n;j++)
-//´Ë´¦ÌîÈëÒ»ĞĞÓï¾ä
+//æ­¤å¤„å¡«å…¥ä¸€è¡Œè¯­å¥
 k=j;
 if(k!=i)
 { m=p[i];
@@ -39,6 +39,6 @@ return 0;
 
 int Datecomp(struct Date d1,struct Date d2)
 { int result;
-//´Ë´¦ÌîÈë¶àĞĞÓï¾ä
+//æ­¤å¤„å¡«å…¥å¤šè¡Œè¯­å¥
 return result;
 }

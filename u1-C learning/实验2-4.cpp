@@ -2,8 +2,8 @@
 #include<math.h>
 int main()
 {   double x0,y0,A,B,C;
-    scanf("%lf%lf",&x0,&y0);//ÊäÈëµãPµÄ×ø±ê
-    scanf("%lf%lf%lf",&A,&B,&C);//ÊäÈëÖ±ÏßLµÄA¡¢BºÍC
-    printf("%f\n",fabs(A*x0 + B*y0 + C) / sqrt(A*A + B*B));//Êä³ö¾àÀë
+    scanf("%lf%lf",&x0,&y0);//è¾“å…¥ç‚¹Pçš„åæ ‡
+    scanf("%lf%lf%lf",&A,&B,&C);//è¾“å…¥ç›´çº¿Lçš„Aã€Bå’ŒC
+    printf("%f\n",fabs(A*x0 + B*y0 + C) / sqrt(A*A + B*B));//è¾“å‡ºè·ç¦»
     return 0;
 }

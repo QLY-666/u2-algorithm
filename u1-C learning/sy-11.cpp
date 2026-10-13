@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include <stdlib.h>
 #include <time.h>
-#define RANDNUM 20000 //Ëæ»úÊıµÄ¸öÊı
+#define RANDNUM 20000 //éšæœºæ•°çš„ä¸ªæ•°
 
 void SelectSort(int a[],int n)
 {
@@ -121,48 +121,48 @@ void copyarray(int a[],int save[],int n)
 
 int main()
 {
- int iRandNum[RANDNUM];//´æ·ÅËæ»úÊı
- clock_t first,second; //¼ÇÂ¼¿ªÊ¼ºÍ½áÊøÊ±¼ä£¨ÒÔºÁÃëÎªµ¥Î»
+ int iRandNum[RANDNUM];//å­˜æ”¾éšæœºæ•°
+ clock_t first,second; //è®°å½•å¼€å§‹å’Œç»“æŸæ—¶é—´ï¼ˆä»¥æ¯«ç§’ä¸ºå•ä½
  int i;
  for(i=0;i<RANDNUM;i++)
- {//²úÉú2Íò¸öËæ»úÊı
+ {//äº§ç”Ÿ2ä¸‡ä¸ªéšæœºæ•°
   iRandNum[i]=rand()%RANDNUM;
  }
 
  int work[RANDNUM];
- printf("³õÊ¼ĞòÁĞµÄÇ°20¸öÊı£º\n");
+ printf("åˆå§‹åºåˆ—çš„å‰20ä¸ªæ•°ï¼š\n");
  for(int i=0;i<20;i++)
  printf("%d ",iRandNum[i]);
  printf("\n");
  
- printf("Ñ¡ÔñÅÅĞò£º\n");
+ printf("é€‰æ‹©æ’åºï¼š\n");
  copyarray(iRandNum,work,RANDNUM); 
  first=clock();
  SelectSort(work,RANDNUM);
  second=clock();
- printf("Ñ¡ÔñÅÅĞòºÄÊ±£º%fÃë\n",(double)(second-first)/CLOCKS_PER_SEC); 
+ printf("é€‰æ‹©æ’åºè€—æ—¶ï¼š%fç§’\n",(double)(second-first)/CLOCKS_PER_SEC); 
  
- printf("²åÈëÅÅĞò£º\n");
+ printf("æ’å…¥æ’åºï¼š\n");
  copyarray(iRandNum,work,RANDNUM); 
  first=clock();
  InsertSort(work,RANDNUM);
  second=clock();
- printf("²åÈëÅÅĞòºÄÊ±£º%fÃë\n",(double)(second-first)/CLOCKS_PER_SEC); 
+ printf("æ’å…¥æ’åºè€—æ—¶ï¼š%fç§’\n",(double)(second-first)/CLOCKS_PER_SEC); 
  
- printf("Ã°ÅİÅÅĞòÅÅĞò£º\n");
+ printf("å†’æ³¡æ’åºæ’åºï¼š\n");
  copyarray(iRandNum,work,RANDNUM); 
  first=clock();
  BubbleSort(work,RANDNUM);
  second=clock();
- printf("Ã°ÅİÅÅĞòºÄÊ±£º%fÃë\n",(double)(second-first)/CLOCKS_PER_SEC); 
+ printf("å†’æ³¡æ’åºè€—æ—¶ï¼š%fç§’\n",(double)(second-first)/CLOCKS_PER_SEC); 
  
- printf("¶şÂ·¹é²¢ÅÅĞò£º\n");
+ printf("äºŒè·¯å½’å¹¶æ’åºï¼š\n");
  copyarray(iRandNum,work,RANDNUM); 
  first=clock();
  MergeSort(work,RANDNUM);
  second=clock();
- printf("¶şÂ·¹é²¢ÅÅĞòºÄÊ±£º%fÃë\n",(double)(second-first)/CLOCKS_PER_SEC); 
- //ÏÔÊ¾ÅÅĞòËã·¨ËùÓÃµÄÊ±¼ä
+ printf("äºŒè·¯å½’å¹¶æ’åºè€—æ—¶ï¼š%fç§’\n",(double)(second-first)/CLOCKS_PER_SEC); 
+ //æ˜¾ç¤ºæ’åºç®—æ³•æ‰€ç”¨çš„æ—¶é—´
  return 0;
 }
 

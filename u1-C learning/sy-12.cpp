@@ -68,24 +68,24 @@ void printTree(node* root, int space)
 int main()
 {
  node* root=NULL;
- char* herb[]={"µØÁú","·ğÊÖ","×ÏÊ¯Ó¢","É³Ô·×Ó","ÅåÀ¼","°×Åî²İ","ĞÇËŞ²İ","ÓñÖñ","ÍßËÉ","´Ğ°×","¹ÇËé²¹","ºú»ÆÁ¬"};
+ char* herb[]={"åœ°é¾™","ä½›æ‰‹","ç´«çŸ³è‹±","æ²™è‹‘å­","ä½©å…°","ç™½è“¬è‰","æ˜Ÿå®¿è‰","ç‰ç«¹","ç“¦æ¾","è‘±ç™½","éª¨ç¢è¡¥","èƒ¡é»„è¿"};
  int n=12;
  for(int i=0;i<12;i++)
  {
   root=insert(root,herb[i]);
  }
- printf("¶ş²æÅÅĞòÊ÷µÄÖĞĞòĞòÁĞ£º\n");
+ printf("äºŒå‰æ’åºæ ‘çš„ä¸­åºåºåˆ—ï¼š\n");
  inorder(root); 
  printf("\n");
- printf("ÊäÈëÒª²éÕÒµÄÖĞÒ©£º");
+ printf("è¾“å…¥è¦æŸ¥æ‰¾çš„ä¸­è¯ï¼š");
  char name[50];
  scanf("%s",&name);
  int target=Search(root,name);
  if(target==1)
- printf("²éÕÒ³É¹¦£¬%s´æÔÚ\n",&name);
+ printf("æŸ¥æ‰¾æˆåŠŸï¼Œ%så­˜åœ¨\n",&name);
  else
- printf("²éÕÒÊ§°Ü£¬%s²»´æÔÚ\n",&name);
- printf("¶ş²æÅÅĞòÊ÷µÄ½á¹¹:\n");
+ printf("æŸ¥æ‰¾å¤±è´¥ï¼Œ%sä¸å­˜åœ¨\n",&name);
+ printf("äºŒå‰æ’åºæ ‘çš„ç»“æ„:\n");
  printTree(root,0); 
  return 0;
 }

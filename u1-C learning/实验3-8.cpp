@@ -4,14 +4,14 @@ int judgeyear(int year)
  
 int main()
 {   int year,month,day;
-    int flag=1; //ÏÈ¼Ù¶¨ÈÕÆÚºÏ·¨
+    int flag=1; //å…ˆå‡å®šæ—¥æœŸåˆæ³•
     scanf("%d-%d-%d",&year,&month,&day);
-    //ÅĞ¶ÏÊäÈëµÄºÏ·¨ĞÔ
-    if(day>31||day<1||month>12||month<0||year<0 )//ÈÕ£¬ÔÂ£¬Äê·Ç·¨Çé¿ö
+    //åˆ¤æ–­è¾“å…¥çš„åˆæ³•æ€§
+    if(day>31||day<1||month>12||month<0||year<0 )//æ—¥ï¼Œæœˆï¼Œå¹´éæ³•æƒ…å†µ
            flag=0;
-    else if(day==31&&(month==4||month==6||month==9||month==11)) //¿¼ÂÇ¡°·Ç´óÔÂ¡±µ«ÓÖ31ÈÕµÄ·Ç·¨Çé¿ö
+    else if(day==31&&(month==4||month==6||month==9||month==11)) //è€ƒè™‘â€œéå¤§æœˆâ€ä½†åˆ31æ—¥çš„éæ³•æƒ…å†µ
            flag=0;
-    else if(month==2&&day>29||month==2&&(day==29&&(year%400!=0||(year%100==0&&year%4!=0))))//¿¼ÂÇ2ÔÂµÄÇé¿ö£¬×¢Òâjudgeyear()º¯ÊıµÄ·µ»ØÖµÎª£¨ÈòÄê1£¬Æ½Äê0£©£¬¿ÉÓÃÓÚ¼ÆËãdayÊÇ·ñÔ½½ç¡£
+    else if(month==2&&day>29||month==2&&(day==29&&(year%400!=0||(year%100==0&&year%4!=0))))//è€ƒè™‘2æœˆçš„æƒ…å†µï¼Œæ³¨æ„judgeyear()å‡½æ•°çš„è¿”å›å€¼ä¸ºï¼ˆé—°å¹´1ï¼Œå¹³å¹´0ï¼‰ï¼Œå¯ç”¨äºè®¡ç®—dayæ˜¯å¦è¶Šç•Œã€‚
            flag=0;
     if(flag) printf("yes");
     else  printf("no");

@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
-//ifºó¾¡¿ÉÄÜ¼Ó{}
-//ifÇ¶Ì× 
+//ifåŽå°½å¯èƒ½åŠ {}
+//ifåµŒå¥— 
 //if() { 
 //}
 //else{ 
 //}
-//if else Óï¾ä 
+//if else è¯­å¥ 
 
 //  if() {}
 // else if(){}
@@ -17,7 +17,7 @@ int main()
 
 //{  
 //   int y,x;
-//   printf("ÊäÈë£º");
+//   printf("è¾“å…¥ï¼š");
 //   scanf("%d",&x);
 //   if(x>=0){
 //   if(x>0){
@@ -35,7 +35,7 @@ int main()
 //}
 {
    int y,x;
-   printf("ÊäÈë£º");
+   printf("è¾“å…¥ï¼š");
    scanf("%d",&x);
    if(x>0){
    printf("y=1");

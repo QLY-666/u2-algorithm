@@ -1,8 +1,8 @@
 #include<stdio.h>
-int judgeyear(int year) //ÈòÄêÅĞ±ğº¯Êı
-{   int flag=0; //Æ½Äê·µ»Ø0
+int judgeyear(int year) //é—°å¹´åˆ¤åˆ«å‡½æ•°
+{   int flag=0; //å¹³å¹´è¿”å›0
     if ((year%4==0 && year%100!=0) || year%400==0)
-           flag=1; //ÈòÄê·µ»Ø1
+           flag=1; //é—°å¹´è¿”å›1
     return flag;
 }
 int main()
@@ -20,13 +20,13 @@ case 7 :dayNumber +=30;
 case 6 :dayNumber +=31;
 case 5 :dayNumber +=30;
 case 4 :dayNumber +=31;
-case 3 :dayNumber +=30;//3ÔÂµÄÇé¿ö,ÇëÌîĞ´¶àĞĞ´úÂë
-case 2 :if(judgeyear(year))//2ÔÂµÄÇé¿ö,ÇëÌîĞ´Ò»ĞĞ´úÂë
+case 3 :dayNumber +=30;//3æœˆçš„æƒ…å†µ,è¯·å¡«å†™å¤šè¡Œä»£ç 
+case 2 :if(judgeyear(year))//2æœˆçš„æƒ…å†µ,è¯·å¡«å†™ä¸€è¡Œä»£ç 
         { dayNumber +=29;	
 		} else {
 		  dayNumber +=28;
 		};
-case 1 :dayNumber +=31;//1ÔÂµÄÇé¿ö,ÇëÌîĞ´¶àĞĞ´úÂë
+case 1 :dayNumber +=31;//1æœˆçš„æƒ…å†µ,è¯·å¡«å†™å¤šè¡Œä»£ç 
         printf("%d",dayNumber+=day);
 		break;      
 default:printf("Input error!");

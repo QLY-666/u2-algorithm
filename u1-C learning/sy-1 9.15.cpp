@@ -6,7 +6,7 @@
 
 long long count;
 
-//²åÈëÅÅĞò  
+//æ’å…¥æ’åº  
 void insert(int arr[])
 {
  count=0;
@@ -30,7 +30,7 @@ void insert(int arr[])
  }
 }
 
-//Ã°ÅİÅÅĞò 
+//å†’æ³¡æ’åº 
 void bubble(int arr[])
 {
  count=0;
@@ -50,7 +50,7 @@ void bubble(int arr[])
  }
 }
 
-//Ñ¡ÔñÅÅĞò
+//é€‰æ‹©æ’åº
 void select(int arr[])
 {
  count=0;
@@ -82,15 +82,15 @@ int main()
  clock_t start,end;
  double spent;
  
- //1.²åÈëÅÅĞò
+ //1.æ’å…¥æ’åº
  for(int i=0;i<N;i++)
  arr[i]=rand()%N;
  start=clock();
  insert(arr);
  end=clock();
  spent=(double)(end-start)/CLOCKS_PER_SEC;
- printf("1.²åÈëÅÅĞò\n");
- printf("Ò»°ãÇé¿ö  ÔËĞĞÊ±¼ä£º%.4fÃë  Ö´ĞĞ´ÎÊı:%lld\n",spent,count);
+ printf("1.æ’å…¥æ’åº\n");
+ printf("ä¸€èˆ¬æƒ…å†µ  è¿è¡Œæ—¶é—´ï¼š%.4fç§’  æ‰§è¡Œæ¬¡æ•°:%lld\n",spent,count);
  
  for(int i=0;i<N;i++)
  arr[i]=N-i;
@@ -98,18 +98,18 @@ int main()
  insert(arr);
  end=clock();
  spent=(double)(end-start)/CLOCKS_PER_SEC;
- printf("×î»µÇé¿ö  ÔËĞĞÊ±¼ä£º%.4fÃë  Ö´ĞĞ´ÎÊı:%lld\n",spent,count);
+ printf("æœ€åæƒ…å†µ  è¿è¡Œæ—¶é—´ï¼š%.4fç§’  æ‰§è¡Œæ¬¡æ•°:%lld\n",spent,count);
  printf("\n");
  
-//2.Ã°ÅİÅÅĞò
+//2.å†’æ³¡æ’åº
  for(int i=0;i<N;i++)
  arr[i]=rand()%N;
  start=clock();
  bubble(arr);
  end=clock();
  spent=(double)(end-start)/CLOCKS_PER_SEC;
- printf("2.Ã°ÅİÅÅĞò\n");
- printf("Ò»°ãÇé¿ö  ÔËĞĞÊ±¼ä£º%.4fÃë  Ö´ĞĞ´ÎÊı:%lld\n",spent,count);
+ printf("2.å†’æ³¡æ’åº\n");
+ printf("ä¸€èˆ¬æƒ…å†µ  è¿è¡Œæ—¶é—´ï¼š%.4fç§’  æ‰§è¡Œæ¬¡æ•°:%lld\n",spent,count);
  
  for(int i=0;i<N;i++)
  arr[i]=N-i;
@@ -117,18 +117,18 @@ int main()
  bubble(arr);
  end=clock();
  spent=(double)(end-start)/CLOCKS_PER_SEC;
- printf("×î»µÇé¿ö  ÔËĞĞÊ±¼ä£º%.4fÃë  Ö´ĞĞ´ÎÊı:%lld\n",spent,count);
+ printf("æœ€åæƒ…å†µ  è¿è¡Œæ—¶é—´ï¼š%.4fç§’  æ‰§è¡Œæ¬¡æ•°:%lld\n",spent,count);
  printf("\n");
  
- //3.Ñ¡ÔñÅÅĞò
+ //3.é€‰æ‹©æ’åº
  for(int i=0;i<N;i++)
  arr[i]=rand()%N;
  start=clock();
  select(arr);
  end=clock();
  spent=(double)(end-start)/CLOCKS_PER_SEC;
- printf("3.Ñ¡ÔñÅÅĞò\n");
- printf("Ò»°ãÇé¿ö  ÔËĞĞÊ±¼ä£º%.4fÃë  Ö´ĞĞ´ÎÊı:%lld\n",spent,count);
+ printf("3.é€‰æ‹©æ’åº\n");
+ printf("ä¸€èˆ¬æƒ…å†µ  è¿è¡Œæ—¶é—´ï¼š%.4fç§’  æ‰§è¡Œæ¬¡æ•°:%lld\n",spent,count);
  
  for(int i=0;i<N;i++)
  arr[i]=N-i;
@@ -136,7 +136,7 @@ int main()
  select(arr);
  end=clock();
  spent=(double)(end-start)/CLOCKS_PER_SEC;
- printf("×î»µÇé¿ö  ÔËĞĞÊ±¼ä£º%.4fÃë  Ö´ĞĞ´ÎÊı:%lld\n",spent,count);
+ printf("æœ€åæƒ…å†µ  è¿è¡Œæ—¶é—´ï¼š%.4fç§’  æ‰§è¡Œæ¬¡æ•°:%lld\n",spent,count);
  printf("\n");
  return 0;
 }
