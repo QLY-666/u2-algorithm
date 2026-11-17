@@ -7,3 +7,7 @@ __pycache__/
 .venv/
 venv/
 *.class
+
+# java 实验运行产物（File6 复制出的 mp4、File8 写入的 score.txt）
+java/*.mp4
+java/score.txt
